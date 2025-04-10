@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Car Parking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Automated Car Parking System</h1>
+    </header>
+    <main>
+        <section id="login">
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="booking" style="display:none;">
+            <h2>Book a Parking Slot</h2>
+            <form id="bookingForm">
+                <label for="slot">Select Slot:</label>
+                <select id="slot" name="slot" required></select>
+                <button type="submit">Book Slot</button>
+            </form>
+            <div id="availability"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Automated Car Parking System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
